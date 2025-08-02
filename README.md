@@ -1,3 +1,7 @@
 # Simple Perceptron
 
-A minimal C# implementation of a single-layer perceptron trained to learn the **AND** logic gate.  
+A minimal C# implementation of a single-layer perceptron trained to learn the **AND** logic.  
+
+Output:
+
+<img width="822" height="603" alt="image" src="https://github.com/user-attachments/assets/8d168e92-f268-4716-a15d-38027cd783b5" />
