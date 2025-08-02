@@ -53,12 +53,13 @@ class Perc
 
         for (int epoch = 0; epoch < epochsNum; epoch++) {
             for (int k = 0; k < 4; k++) {
-                int predictLabel = sigmoidComp(predictComp(k));
+                double predictLabel = sigmoidComp(predictComp(k));
                 for (int r = 0; r < 2; r++) {
                     weights[r] += learningRate *  (labelData[k, 0] - predictLabel) * inputData[k,r];
                 }
                 bias += learningRate * (labelData[k, 0] - predictLabel);
             }
+            Console.WriteLine($"Epoch {epoch + 1}: Weights = [{weights[0]}, {weights[1]}], Bias = {bias}");
         }
     }
 }
